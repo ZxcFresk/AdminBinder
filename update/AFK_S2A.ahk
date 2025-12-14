@@ -38,10 +38,10 @@ Gui Font, c0x00FF00
 SoundPlay, %A_ScriptDir%\img\1209.mp3
 
 Gui Show, w898 h597, Aleksei Dekov AHK
-Return
+Return      ; ← ОЧЕНЬ ВАЖНО! Останавливает автозапуск следующих блоков
 
 
-; ========================  Окна  ========================
+; ========================  ОКНА  ========================
 
 OpenDesc:
     MsgBox, 0, Описание,
@@ -95,115 +95,115 @@ Return
 
 
 ; ========================  Команды  ==========================
-:?:.ьгеумщшсу::
+:?:юьгеумщшсу::
     Clipboard := "/mutevoice"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.ьгеушс::
+:?:юьгеушс::
     Clipboard := "/muteic"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.ьгеущщс::
+:?:юьгеущщс::
     Clipboard := "/muteooc"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.фофшд::
+:?:юфофшд::
     Clipboard := "/ajail"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.цфкт::
+:?:юцфкт::
     Clipboard := "/warn"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:..фт::
+:?:юифт::
     Clipboard := "/ban"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.прмур::
+:?:юпрмур::
     Clipboard := "/ghveh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.пр::
+:?:юпр::
     Clipboard := "/gh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.адшзм::
+:?:юадшзм::
     Clipboard := "/flipv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.пщ::
+:?:юпщ::
     Clipboard := "/go"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.пм::
+:?:юпм::
     Clipboard := "/gv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.ф::
+:?:юф::
     Clipboard := "/a"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.зпм::
+:?:юзпм::
     Clipboard := "/pgv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.мур::
+:?:юмур::
     Clipboard := "/veh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.зштащ::
+:?:юзштащ::
     Clipboard := "/pinfo"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.рз::
+:?:юрз::
     Clipboard := "/xp"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.фкьщгк::
+:?:юфкьщгк::
     Clipboard := "/armour"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.фруфд::
+:?:юфруфд::
     Clipboard := "/aheal"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:.гтсгаа::
+:?:югтсгаа::
     Clipboard := "/uncuff"
     Send, ^v
     Clipboard := ""
@@ -261,7 +261,7 @@ Return
 Return
 
 
-; ========================  Служебные  ========================
+; ========================  СЛУЖЕБНЫЕ  ========================
 
 ^F9::Reload
 ^F10::ExitApp
@@ -279,68 +279,57 @@ GuiClose:
     ExitApp
 Return
 
-F6::
-SendClipboardText("Здравствуйте, иду к вам на помощь.")
+!1::
+SendClipboardText("Здравствуйте.")
 Return
 
-!7::
-SendClipboardText("/orgcars")
+!2::
+SendClipboardText("Чем вам помочь?")
 Return
 
-!8::
-SendClipboardText("Следите за всеми новостями в официальном телеграм Lemaire! https://t.me/lemaire")
+!3::
+SendClipboardText("Приятной игры :herb:")
+Return
+
+!4::
+SendClipboardText("Обратитесь в F3 - Проблемы с игрой")
 Return
 
 !5::
-SendClipboardText("Настройка микрофона для RAGE MP: Выйти из игры - открыть RAGE MP - справа сверху 3 полоски (настройки) - открыть настройки и пролистать вниз до настройки микрофона - назначить верный микрофон.")
+SendClipboardText("Обратитесь в F3 - Жалоба")
 Return
 
-^Z::
-SendClipboardText("/a Ящик")
+!6::
+SendClipboardText("Обратитесь на форум, вам обязательно помогут.")
 Return
 
-F7::
-SendClipboardText("Мурчим вместе на Radmir GTA 5 RP <3")
-Return
-
-F8::
-SendClipboardText("Если у вас есть откат обратитесь на форум, вам обязательно помогут.")
-Return
-
-!F9::
+!7::
 SendClipboardText("Попробуйте перезайти в игру, если и это не поможет напишите в Технический раздел на нашем форуме Radmir RP GTA 5. <3")
 Return
 
-!Numpad1::
+!q::
+SendClipboardText("Если будут еще вопросы, обращайтесь.")
+Return
+
+!a::
+SendClipboardText("Здравствуйте, иду к вам на помощь.")
+Return
+
+!w::
 SendClipboardText("Не владеем такой информацией.")
 Return
 
-!Numpad3::
-SendClipboardText("/flipv ")
+!s::
+SendClipboardText("Помог вам. <3")
 Return
 
-!Numpad4
-SendClipboardText("/spcar ")
-Return
-
-!Numpad5
-SendClipboardText("/ghveh ")
-Return
-
-!Numpad8
-SendClipboardText("/pgv  ")
-Return
-
-!Numpad9
-SendClipboardText("/pinfo  ")
+; === Автоответы по ::…:: ===
+::..::
+SendClipboardText("Уточните ваш вопрос.")
 Return
 
 ::.конты::
 SendClipboardText("Контейнеры запускаются каждые 2 часа с 8:00 до 00:00 по МСК, в четное время (Пример: 10:00, 12:00, 14:00).")
-Return
-
-::.штраф::
-SendClipboardText("Чтобы найти, где оплатить штрафы, откройте F2 → Персонаж → Информация и посмотрите, где у вас штраф. После этого езжайте в соответствующий департамент, подойдите к NPC и оплатите штраф.")
 Return
 
 ::.промо::
@@ -355,16 +344,17 @@ Return
 SendClipboardText("Припарковать автомобиль можно сидя в нём: G -> Меню ТС -> Припарковать, либо около него: E -> Меню ТС -> Припарковать.")
 Return
 
+; === … и так далее для всех остальных биндов ===
 
+; === Функция для вставки текста через буфер и Enter ===
 SendClipboardText(Text) {
-    ClipSaved := ClipboardAll
-    Clipboard := Text
-    ClipWait, 0.5
-    Send, ^v{Enter}
-    Sleep, 50
-    Clipboard := ClipSaved
+    ClipSaved := ClipboardAll      ; Сохраняем текущий буфер
+    Clipboard := Text              ; Кладем нужный текст
+    ClipWait, 0.5                  ; Ждем обновления буфера
+    Send, ^v{Enter}                ; Вставляем и сразу Enter
+    Sleep, 50                      ; Маленькая пауза для надежности
+    Clipboard := ClipSaved         ; Восстанавливаем старый буфер
 }
-
 PgDn::
     Send, {vk54}
     Sleep, 50
