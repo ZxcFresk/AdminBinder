@@ -38,27 +38,27 @@ SetWorkingDir %A_ScriptDir%
 SetBatchLines -1
 
 Gui Add, Picture, x-2 y-4 w900 h601, ./img/Madman.jpg 
-Gui Add, Button, x10 y200 w113 h33 gOpenDesc, Îïèñàíèå
-Gui Add, Button, x10 y230 w113 h33 gOpenInfo, Èíôîðìàöèÿ
-Gui Add, Button, x10 y260 w113 h33 gOpenCmd, Êîìàíäû
-Gui Add, Button, x10 y290 w113 h33 gOpenNorm, Íîðìà
-Gui Add, Button, x10 y320 w113 h33 gOpenAns, Îòâåòû
-Gui Add, Button, x10 y350 w113 h33 gOpenTP, Òåëåïîðòû
+Gui Add, Button, x10 y200 w113 h33 gOpenDesc, Описание
+Gui Add, Button, x10 y230 w113 h33 gOpenInfo, Информация
+Gui Add, Button, x10 y260 w113 h33 gOpenCmd, Команды
+Gui Add, Button, x10 y290 w113 h33 gOpenNorm, Норма
+Gui Add, Button, x10 y320 w113 h33 gOpenAns, Ответы
+Gui Add, Button, x10 y350 w113 h33 gOpenTP, Телепорты
 
-Gui Add, Link,x0 y390,?Æàëîáû íà àäìèíîâ <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8E.49/">Aleksei Dekov</a>
-Gui Add, Link,x0 y410,?Æàëîáû íà ãîññ <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BB%D1%83%D0%B6%D0%B0%D1%89%D0%B8%D1%85.52/">Aleksei Dekov</a>
-Gui Add, Link,x0 y430,?Æàëîáû íà êðàéì <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2-%D0%BA%D1%80%D0%B8%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80.53/">Aleksei Dekov</a>
-Gui Add, Link,x0 y450,?Æàëîáû íà íåôðàê <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%BD%D0%B5%D1%84%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2.51/">Aleksei Dekov</a>
+Gui Add, Link,x0 y390,?Жалобы на админов <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8E.49/">Aleksei Dekov</a>
+Gui Add, Link,x0 y410,?Жалобы на госс <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BB%D1%83%D0%B6%D0%B0%D1%89%D0%B8%D1%85.52/">Aleksei Dekov</a>
+Gui Add, Link,x0 y430,?Жалобы на крайм <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2-%D0%BA%D1%80%D0%B8%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80.53/">Aleksei Dekov</a>
+Gui Add, Link,x0 y450,?Жалобы на нефрак <a href="https://forum.radmirv.com/forums/%D0%96%D0%B0%D0%BB%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D0%BD%D0%B5%D1%84%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2.51/">Aleksei Dekov</a>
 
 Gui Color, FFFFFF
 Gui Show, x0 y390
 
-; Ïðàâûé áëîê êíîïîê
-Gui Add, Button, x450 y500 w138 h37 +Default, Ñîõðàíèòü
-Gui Add, Button, x600 y500 w138 h37 +Default gReloadScript, Ïåðåçàïóñòèòü
-Gui Add, Button, x750 y500 w138 h37 +Default gCloseScript, Çàêðûòü
-Gui Add, Text, x10 y480 w200 h20 +0x200, Øêàëà ïîêàçûâàåò: Âûïîëíåíî
-Gui Add, Text, x10 y500 w200 h20 +0x200, Íîðìà àäìèíèñòðàòîðà(250)
+; Правый блок кнопок
+Gui Add, Button, x450 y500 w138 h37 +Default, Сохранить
+Gui Add, Button, x600 y500 w138 h37 +Default gReloadScript, Перезапустить
+Gui Add, Button, x750 y500 w138 h37 +Default gCloseScript, Закрыть
+Gui Add, Text, x10 y480 w200 h20 +0x200, Шкала показывает: Выполнено
+Gui Add, Text, x10 y500 w200 h20 +0x200, Норма администратора(250)
 Gui Add, Progress, w200 Range0-250 cGreen vMyProgress, %WeekANS%
 
 IniRead, vupd, %a_temp%/verlen.ini, UPD, v
@@ -71,179 +71,179 @@ Gui Font, c0x00FF00
 SoundPlay, %A_ScriptDir%\img\1209.mp3
 
 Gui Show, w898 h597, Aleksei Dekov AHK
-Return      ; < Î×ÅÍÜ ÂÀÆÍÎ! Îñòàíàâëèâàåò àâòîçàïóñê ñëåäóþùèõ áëîêîâ
+Return      ; < ОЧЕНЬ ВАЖНО! Останавливает автозапуск следующих блоков
 
 
-; ========================  ÎÊÍÀ  ========================
+; ========================  ОКНА  ========================
 
 OpenDesc:
-    MsgBox, 0, Îïèñàíèå,
+    MsgBox, 0, Описание,
     (
-Ñîôò ñîçäàí äëÿ îáëåã÷åíèÿ ðàáîòû àäìèíèñòðàöèè ïðîåêòà Radmir S2 Role Play.
+Софт создан для облегчения работы администрации проекта Radmir S2 Role Play.
 
-Î ñîôòå: Ñîôò îáøèðåí è óíèâåðñàëåí. Îí ïîìîæåò â îáó÷åíèè è íà÷àëó àäìèíñêîãî îïûòà,
-ïàìÿòêè ñîäåðæàò íîðìû íàêàçàíèé è ÷àñòûå íàðóøåíèÿ.
+О софте: Софт обширен и универсален. Он поможет в обучении и началу админского опыта,
+памятки содержат нормы наказаний и частые нарушения.
 
-"Êîìàíäû" - ñîäåðæàò ïîïóëÿðíûå êîìàíäû è ïîÿñíÿþò, äëÿ ÷åãî îíè íóæíû.
-Êðàòêèå îòâåòû ïîìîãóò â îñâîåíèè ôóíêöèîíàëà.
+"Команды" - содержат популярные команды и поясняют, для чего они нужны.
+Краткие ответы помогут в освоении функционала.
 
     )
 Return
 
 OpenInfo:
-    MsgBox, 0, Èíôîðìàöèÿ,
+    MsgBox, 0, Информация,
     (
-Áèíäåð îáëåã÷èò ðàáîòó àäìèíèñòðàöèè íà Radmir S2 Role Play.`n`nÓäàëåíèå ãîðÿ÷èõ êëàâèøü ïðîèñõîäèò íà Backspace, ïîñëå ñîçäàíèÿ "Bind'a" íåîáõîäèìî ñîõðàíåíèå, êàê è ïîñëå åãî ñíÿòèÿ!`n`nÏåðåçàïóñê áèíäåðà âîçìîæåí ïðè íàæàòèè íà "Ïåðåçàïóñòèòü", Çàêðûâàòü ñêðèï òîëüêî íà êíîïêó "Çàêðûòü", â ïðîòèâíîì ñëó÷àå îí óéä¸ò â ôîíîâûå ïðîöåññû!`nÂî âñåõ ñëó÷àÿõ Ctrl + F9 ïåðåçàïóñòèò ðàáîòó ñêðèïòà, à Ctrl + F10 çàâåðøèò ðàáîòó ñêðèïòà!
+Биндер облегчит работу администрации на Radmir S2 Role Play.`n`nУдаление горячих клавишь происходит на Backspace, после создания "Bind'a" необходимо сохранение, как и после его снятия!`n`nПерезапуск биндера возможен при нажатии на "Перезапустить", Закрывать скрип только на кнопку "Закрыть", в противном случае он уйдёт в фоновые процессы!`nВо всех случаях Ctrl + F9 перезапустит работу скрипта, а Ctrl + F10 завершит работу скрипта!
     )
 Return
 
 OpenCmd:
-    MsgBox, 0, Êîìàíäû,
+    MsgBox, 0, Команды,
     (
-? ? ? ? ? ?Ñîêðàùåíèå ïîïóëÿðíûõ êîìàíä.? ? ? ? ? ?  - þôîôøä - Ïðîïèñü /ajail.`n - þüãåóìùøñó - Ïðîïèñü /mutevoice.`n - þüãåóøñ - Ïðîïèñü /muteic.`n - þüãåóùùñ - Ïðîïèñü /muteooc.`n - þöôêò - Ïðîïèñü /warn.`n - þèôò - Ïðîïèñü /ban.`n - þïðìóð - Ïðîïèñü /ghveh.`n - þïð - Ïðîïèñü /gh.`n - þçü - Ïðîïèñü /pm.`n - þâåõ - Ïðîïèñü /veh.`n - þïù - Ïðîïèñü /go.`n
+? ? ? ? ? ?Сокращение популярных команд.? ? ? ? ? ?  - юфофшд - Пропись /ajail.`n - юьгеумщшсу - Пропись /mutevoice.`n - юьгеушс - Пропись /muteic.`n - юьгеущщс - Пропись /muteooc.`n - юцфкт - Пропись /warn.`n - юифт - Пропись /ban.`n - юпрмур - Пропись /ghveh.`n - юпр - Пропись /gh.`n - юзь - Пропись /pm.`n - ювех - Пропись /veh.`n - юпщ - Пропись /go.`n
     )
 Return
 
 OpenNorm:
-    MsgBox, 0, Íîðìà,
+    MsgBox, 0, Норма,
     (
-Íîðìà Àäìèíîâ-Õåëïåðîâ, `n ? Õåëïåðû - 100+ â íåäåëþ.`n ? Àäìèíèñòðàòîðû - 250+ â íåäåëþ.
+Норма Админов-Хелперов, `n ? Хелперы - 100+ в неделю.`n ? Администраторы - 250+ в неделю.
     )
 Return
 
 OpenAns:
-    MsgBox, 0, Îòâåòû,
+    MsgBox, 0, Ответы,
     (
 .
     )
 Return
 
 OpenTP:
-    MsgBox, 0, Òåëåïîðòû,
+    MsgBox, 0, Телепорты,
     (
-Òåëåïîðòû íà ãîñ ñòðóêòóðû:
- .LSPD - òåëåïîðò íà LSPD`n .LSMC - òåëåïîðò íà Áîëüíèöó LSMC`n .SSMC - òåëåïîðò íà Áîëüíèöó SSMC`n .NG - òåëåïîðò íà SANG`n .GOV - òåëåïîðò íà GOV`n .FIB - òåëåïîðò íà ÔÈÁ`n `n
+Телепорты на гос структуры:
+ .LSPD - телепорт на LSPD`n .LSMC - телепорт на Больницу LSMC`n .SSMC - телепорт на Больницу SSMC`n .NG - телепорт на SANG`n .GOV - телепорт на GOV`n .FIB - телепорт на ФИБ`n `n
     )
 Return
 
 
-; ========================  Êîìàíäû  ==========================
-:?:þüãåóìùøñó::
+; ========================  Команды  ==========================
+:?:юьгеумщшсу::
     Clipboard := "/mutevoice"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þüãåóøñ::
+:?:юьгеушс::
     Clipboard := "/muteic"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þüãåóùùñ::
+:?:юьгеущщс::
     Clipboard := "/muteooc"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þôîôøä::
+:?:юфофшд::
     Clipboard := "/ajail"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þöôêò::
+:?:юцфкт::
     Clipboard := "/warn"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þèôò::
+:?:юифт::
     Clipboard := "/ban"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þïðìóð::
+:?:юпрмур::
     Clipboard := "/ghveh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þïð::
+:?:юпр::
     Clipboard := "/gh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þàäøçì::
+:?:юадшзм::
     Clipboard := "/flipv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þïù::
+:?:юпщ::
     Clipboard := "/go"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þïì::
+:?:юпм::
     Clipboard := "/gv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þô::
+:?:юф::
     Clipboard := "/a"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þçïì::
+:?:юзпм::
     Clipboard := "/pgv"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þìóð::
+:?:юмур::
     Clipboard := "/veh"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þçøòàù::
+:?:юзштащ::
     Clipboard := "/pinfo"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þðç::
+:?:юрз::
     Clipboard := "/xp"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þôêüùãê::
+:?:юфкьщгк::
     Clipboard := "/armour"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þôðóôä::
+:?:юфруфд::
     Clipboard := "/aheal"
     Send, ^v
     Clipboard := ""
 Return
 
-:?:þãòñãàà::
+:?:югтсгаа::
     Clipboard := "/uncuff"
     Send, ^v
     Clipboard := ""
 Return
 
 
-; ========================  Òïøêè  ============================
+; ========================  Тпшки  ============================
 :?:.LSPD::
     Clipboard := "/tp -1113.29345703125, -823.17333984375 19.26188850492832"
     Send, ^v
@@ -294,7 +294,7 @@ Return
 Return
 
 
-; ========================  ÑËÓÆÅÁÍÛÅ  ========================
+; ========================  СЛУЖЕБНЫЕ  ========================
 
 ^F9::Reload
 ^F10::ExitApp
@@ -313,84 +313,83 @@ GuiClose:
 Return
 
 !1::
-SendClipboardText("Çäðàâñòâóéòå.")
+SendClipboardText("Здравствуйте.")
 Return
 
 !2::
-SendClipboardText("×åì âàì ïîìî÷ü?")
+SendClipboardText("Чем вам помочь?")
 Return
 
 !3::
-SendClipboardText("Ïðèÿòíîé èãðû :herb:")
+SendClipboardText("Приятной игры :herb:")
 Return
 
 !4::
-SendClipboardText("Îáðàòèòåñü â F3 - Ïðîáëåìû ñ èãðîé")
+SendClipboardText("Обратитесь в F3 - Проблемы с игрой")
 Return
 
 !5::
-SendClipboardText("Îáðàòèòåñü â F3 - Æàëîáà")
+SendClipboardText("Обратитесь в F3 - Жалоба")
 Return
 
 !6::
-SendClipboardText("Îáðàòèòåñü íà ôîðóì, âàì îáÿçàòåëüíî ïîìîãóò.")
+SendClipboardText("Обратитесь на форум, вам обязательно помогут.")
 Return
 
 !7::
-SendClipboardText("Ïîïðîáóéòå ïåðåçàéòè â èãðó, åñëè è ýòî íå ïîìîæåò íàïèøèòå â Òåõíè÷åñêèé ðàçäåë íà íàøåì ôîðóìå Radmir RP GTA 5. <3")
+SendClipboardText("Попробуйте перезайти в игру, если и это не поможет напишите в Технический раздел на нашем форуме Radmir RP GTA 5. <3")
 Return
 
 !q::
-SendClipboardText("Åñëè áóäóò åùå âîïðîñû, îáðàùàéòåñü.")
+SendClipboardText("Если будут еще вопросы, обращайтесь.")
 Return
 
 !a::
-SendClipboardText("Çäðàâñòâóéòå, èäó ê âàì íà ïîìîùü.")
+SendClipboardText("Здравствуйте, иду к вам на помощь.")
 Return
 
 !w::
-SendClipboardText("Íå âëàäååì òàêîé èíôîðìàöèåé.")
+SendClipboardText("Не владеем такой информацией.")
 Return
 
 !s::
-SendClipboardText("Ïîìîã âàì. <3")
+SendClipboardText("Помог вам. <3")
 Return
 
-; === Àâòîîòâåòû ïî :::: ===
+; === Автоответы по ::…:: ===
 ::..::
-SendClipboardText("Óòî÷íèòå âàø âîïðîñ.")
+SendClipboardText("Уточните ваш вопрос.")
 Return
 
-::.êîíòû::
-SendClipboardText("Êîíòåéíåðû çàïóñêàþòñÿ êàæäûå 2 ÷àñà ñ 8:00 äî 00:00 ïî ÌÑÊ, â ÷åòíîå âðåìÿ (Ïðèìåð: 10:00, 12:00, 14:00).")
+::.конты::
+SendClipboardText("Контейнеры запускаются каждые 2 часа с 8:00 до 00:00 по МСК, в четное время (Пример: 10:00, 12:00, 14:00).")
 Return
 
-::.ïðîìî::
-SendClipboardText("Ìû íå âûäàåì è íå ñîîáùàåì ïðîìîêîäû. Âñå íîâèíêè âû ìîæåòå íàéòè â íàøåì îôô. ïàáëèêå ÂÊ, ëèáî äèñêîðä êàíàëå Radmir GTA V.")
+::.промо::
+SendClipboardText("Мы не выдаем и не сообщаем промокоды. Все новинки вы можете найти в нашем офф. паблике ВК, либо дискорд канале Radmir GTA V.")
 Return
 
-::.àâòî::
-SendClipboardText("×òîáû íàéòè ñâîé àâòîìîáèëü îòêðîéòå òåëåôîí(ïî óìîë. ñòðåëî÷êà ââåðõ) -> GPS -> Èìóùåñòâî -> Çàòåì íàæìèòå íà íàçâàíèå âàøåãî ÒÑ, íà êàðòå ïîñòàâèòñÿ ìåòêà ãäå îí íàõîäèòñÿ, åñëè îí â ñàëîíå, åãî íóæíî âîññòàíîâèòü (ïîäîéòè ê ÍÏÑ -> Íàæàòü E -> Âîññòàíîâëåíèå ÒÑ -> Íàçâàíèå âàøåãî ÒÑ.)")
+::.авто::
+SendClipboardText("Чтобы найти свой автомобиль откройте телефон(по умол. стрелочка вверх) -> GPS -> Имущество -> Затем нажмите на название вашего ТС, на карте поставится метка где он находится, если он в салоне, его нужно восстановить (подойти к НПС -> Нажать E -> Восстановление ТС -> Название вашего ТС.)")
 Return
 
-::.ïàðêîâêà::
-SendClipboardText("Ïðèïàðêîâàòü àâòîìîáèëü ìîæíî ñèäÿ â í¸ì: G -> Ìåíþ ÒÑ -> Ïðèïàðêîâàòü, ëèáî îêîëî íåãî: E -> Ìåíþ ÒÑ -> Ïðèïàðêîâàòü.")
+::.парковка::
+SendClipboardText("Припарковать автомобиль можно сидя в нём: G -> Меню ТС -> Припарковать, либо около него: E -> Меню ТС -> Припарковать.")
 Return
 
-; ===  è òàê äàëåå äëÿ âñåõ îñòàëüíûõ áèíäîâ ===
+; === … и так далее для всех остальных биндов ===
 
-; === Ôóíêöèÿ äëÿ âñòàâêè òåêñòà ÷åðåç áóôåð è Enter ===
+; === Функция для вставки текста через буфер и Enter ===
 SendClipboardText(Text) {
-    ClipSaved := ClipboardAll      ; Ñîõðàíÿåì òåêóùèé áóôåð
-    Clipboard := Text              ; Êëàäåì íóæíûé òåêñò
-    ClipWait, 0.5                  ; Æäåì îáíîâëåíèÿ áóôåðà
-    Send, ^v{Enter}                ; Âñòàâëÿåì è ñðàçó Enter
-    Sleep, 50                      ; Ìàëåíüêàÿ ïàóçà äëÿ íàäåæíîñòè
-    Clipboard := ClipSaved         ; Âîññòàíàâëèâàåì ñòàðûé áóôåð
+    ClipSaved := ClipboardAll      ; Сохраняем текущий буфер
+    Clipboard := Text              ; Кладем нужный текст
+    ClipWait, 0.5                  ; Ждем обновления буфера
+    Send, ^v{Enter}                ; Вставляем и сразу Enter
+    Sleep, 50                      ; Маленькая пауза для надежности
+    Clipboard := ClipSaved         ; Восстанавливаем старый буфер
 }
 PgDn::
     Send, {vk54}
     Sleep, 50
     SendClipboardText("/tp -74.95462799072266, -819.4271240234375 326.1750793457031")
-
 Return
